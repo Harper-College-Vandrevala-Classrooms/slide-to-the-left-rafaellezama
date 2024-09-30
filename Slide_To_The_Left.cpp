@@ -14,12 +14,11 @@ int main(){
     cin >> pStore[i];
   }
 
-      //loop that displays the numbers of the array  
-  for(int i =0; i <(size - 1); i++){
-    *(pStore[i + 1]);
-    array[size -1] = *pStore;
-      
+   //loop that displays the numbers of the array  
+  for(int i =0; i <(size); i++){
+    cout << *(pStore + i)<< " ";
   }
+
   delete[] pStore;
   return 0;
 }
